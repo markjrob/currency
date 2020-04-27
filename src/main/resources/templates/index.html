@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: 'Kanit', sans-serif;}
+    </style>
+    <title>Currency</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5"><center>Currency  Base : EURO</center></h1><hr>
+    <table class="table mt-4 table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>USD</th>
+            <th th:text="${rate.usd}"></th>
+        </tr>
+        <tr>
+            <th>GBP</th>
+            <th th:text="${rate.gbp}"></th>
+        </tr>
+        <tr>
+            <th>THB</th>
+            <th th:text="${rate.thb}"></th>
+        </tr>
+        <tr>
+            <th>JPY</th>
+            <th th:text="${rate.jpy}"></td>
+        </tr>
+        <tr>
+            <th>HKD</th>
+            <th th:text="${rate.hkd}"></th>
+        </tr>
+        <tr>
+            <th>MYR</th>
+            <th th:text="${rate.myr}"></th>
+        </tr>
+        <tr>
+            <th>SGD</th>
+            <th th:text="${rate.sgd}"></th>
+        </tr>
+        <tr>
+            <th>BND</th>
+            <th th:text="${rate.bnd}"></th>
+        </tr>
+        <tr>
+            <th>PHP</th>
+            <th th:text="${rate.php}"></th>
+        </tr>
+        <tr>
+            <th>IDR</th>
+            <th th:text="${rate.idr}"></th>
+        </tr>
+        <tr>
+            <th>INR</th>
+            <th th:text="${rate.inr}"></th>
+        </tr>
+        <tr>
+            <th>CHF</th>
+            <th th:text="${rate.chf}"></th>
+        </tr>
+        <tr>
+            <th>AUD</th>
+            <th th:text="${rate.aud}"></th>
+        </tr>
+        <tr>
+            <th>NZD</th>
+            <th th:text="${rate.nzd}"></th>
+        </tr>
+        <tr>
+            <th>CAD</th>
+            <th th:text="${rate.cad}"></th>
+        </tr>
+        <tr>
+            <th>SEK</th>
+            <th th:text="${rate.sek}"></th>
+        </tr>
+        <tr>
+            <th>DKK</th>
+            <th th:text="${rate.dkk}"></th>
+        </tr>
+        <tr>
+            <th>NOK</th>
+            <th th:text="${rate.nok}"></th>
+        </tr>
+        <tr>
+            <th>CNY</th>
+            <th th:text="${rate.cny}"></th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
